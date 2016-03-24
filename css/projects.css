@@ -1,0 +1,636 @@
+.projects-description {
+	margin: 14px 0 30px;
+	text-align: center;
+}
+
+.project-section {
+	text-align: center;
+	border: 2px solid #444;
+	border-radius: 8px;
+	margin: 20px 0;
+	padding: 16px;
+}
+
+.buttons-container {
+	position: relative;
+	text-align: right;
+}
+
+.buttons-container > .button {
+	position: relative;
+	display: inline-block;
+	height: 28px;
+	width: 85px;
+	background-color: #d1c7e8;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 1px solid #666;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.buttons-container .msg-area {
+	display: inline;
+	color: red;
+}
+
+.right-body .description {
+	display: none;
+}
+
+.project-section .description {
+	display: inline-block;
+	width: 315px;
+	font-size: 14px;
+	margin-left: 30px;
+	vertical-align: top;
+	padding: 4px 8px;
+	margin-bottom: 14px;
+	color: #001d9a;
+	border-radius: 10px;
+	border: 1px solid #9a94d4;
+	text-align: center;
+}
+
+.project-section .project-title {
+	display: block;
+	height: 32px;
+	font-size: 20px;
+	text-shadow: 0px 0px 6px #42C0FB;
+}
+
+/**************************/
+/*      myCharacter       */
+/**************************/
+.project-section .my-character-container {
+	text-align: left;
+}
+
+.project-section .my-character {
+	position: relative;
+	width: 160px;
+	height: 160px;
+	display: inline;
+	left: 26px;
+	top: 14px;
+}
+
+.project-section .character-bg {
+	width: 158px;
+	height: 175px;
+	position: absolute;
+	background-color: white;
+	border: 4px solid #d1c7e8;
+	border-radius: 20px;
+}
+
+.project-section .my-character-container .right-body {
+	text-align: center;
+}
+
+.right-body > * {
+	display: inline-block;
+}
+
+.right-body .place-holder {
+	vertical-align: top;
+	width: 165px;
+	height: 196px;
+}
+
+.my-character * {
+	position: absolute;
+}
+
+.hair-area .hair {
+	width: 112px;
+	height: 116px;
+	background-color: black;
+	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+	border-radius: 50% 50% 50% 50% / 60% 60% 8% 8%;
+	border: 1px solid black;
+}
+
+.hair-area .bangs > * {
+	z-index: 2;
+	width: 64px;
+	height: 25px;
+	border-radius: 50% 50% 50% 50% / 10% 10% 67% 62%;
+	border-bottom: 1px solid black;
+	background-color: black;
+	margin-top: 23px;
+
+}
+
+.hair-area .bangs .left {
+	margin-left: 3px;
+	-webkit-transform: rotate(-42deg);
+	-moz-transform: rotate(-42deg);
+	-ms-transform: rotate(-42deg);
+	-o-transform: rotate(-42deg);
+}
+
+.hair-area .bangs .right {
+	margin-left: 45px;
+	-webkit-transform: rotate(42deg);
+	-moz-transform: rotate(42deg);
+	-ms-transform: rotate(42deg);
+	-o-transform: rotate(42deg);
+}
+
+.ears > * {
+	width: 23px;
+	height: 10px;
+	background: #d2b48c;
+	margin-top: 74px;
+	margin-left: -3px;
+	border: 1px solid black;
+}
+
+.ears .left {
+	border-radius: 50% 50% 50% 50% / 0% 0% 95% 63%;
+	-webkit-transform: rotate(84deg);
+	-moz-transform: rotate(84deg);
+	-ms-transform: rotate(84deg);
+	-o-transform: rotate(84deg);
+}
+
+.ears .right {
+	margin-left: 92px;
+	border-radius: 50% 50% 50% 50% / 0% 0% 63% 95%;
+	-webkit-transform: rotate(-84deg);
+	-moz-transform: rotate(-84deg);
+	-ms-transform: rotate(-84deg);
+	-o-transform: rotate(-84deg);
+}
+
+.face {
+	width: 86px;
+	height: 104px;
+	background-color: #d2b48c;
+	margin-top: 20px;
+	margin-left: 13px;
+	border-radius: 100% 100% 100% 100% / 90% 90% 100% 100%;
+	border: 1px solid black;
+}
+
+.my-character .eye {
+	width: 9px;
+	height: 9px;
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 6px;
+	margin-left: 13px;
+	margin-top: 9px;
+}
+
+.my-character .right-eye {
+	margin-left: 6px;
+}
+
+
+
+.my-character .eye-area {
+	width: 30px;
+	height: 30px;
+	margin-left: 21px;
+	margin-top: 60px;
+}
+
+.my-character .right-eye-area {
+	margin-left: 63px;
+}
+
+.my-character .eyebrow {
+	width: 25px;
+	height: 10px;
+	border-radius: 50%;
+	margin-top: 2px;
+}
+
+.my-character .left-eyebrow {
+	margin-left: 5px;
+	box-shadow: -1px -2px 0 0 black;
+}
+
+.my-character .right-eyebrow {
+	box-shadow: 1px -2px 0 0 black;
+}
+
+.my-character .eyeball {
+	width: 19px;
+	height: 10px;
+	background: white;
+	border-radius: 50%;
+	margin-top: 9px;
+	margin-left: 8px;
+}
+
+.my-character .eyeball.right-eyeball {
+	margin-left: 3px;
+}
+
+.my-character .eyelid {
+	width: 20px;
+	height: 12px;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+.my-character .left-eyelid {
+	margin-left: 9px;
+	box-shadow: -1px -2px 0 0 black;
+}
+
+.my-character .right-eyelid {
+	margin-left: 1px;
+	box-shadow: 1px -2px 0 0 black;
+}
+
+.my-character .mouth {
+	width: 32px;
+	height: 22px;
+	background: #FA8072;
+	border-radius: 50% 50% 50% 50% / 0% 0% 82% 82%;
+	border: 1px solid black;
+	margin-left: 41px;
+	margin-top: 92px;
+}
+
+.my-character .custom-message {
+	position: absolute;
+	width: 112px;
+	margin-top: 130px;
+	padding: 0 2px;
+	text-align: center;
+}
+
+.right-body .character-editor {
+	display: none;
+}
+
+.project-section .character-editor {
+	display: inline-block;
+	position: relative;
+	width: 412px;
+	height: 185px;
+}
+
+.character-editor * {
+	position: relative;
+}
+
+.editor-row {
+	padding-bottom: 16px;
+	line-height: 20px;
+}
+
+.editor-row input {
+	vertical-align: top;
+	height: 23px;
+}
+
+.character-editor .editor-row input.message {
+	padding-top: 3px;
+	height: 16px;
+}
+
+.character-editor .editor-row input:not(.message) {
+	width: 100px;
+	cursor: pointer;
+}
+
+.editor-row > * {
+	display: inline-block;
+}
+
+.character-editor .editor-row .basic-options {
+	width: 182px;
+}
+
+.character-editor .editor-row .basic-options > * {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 4px 2px 0 2px;
+	border-radius: 3px;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+.character-editor .editor-row .selected {
+	box-shadow: 0px 0px 0px 2px #5070fb;
+}
+
+/* Hair Colors */
+
+.character-editor .editor-row .basic-options.hair .black {
+	background-color: black;
+}
+
+.character-editor .editor-row .basic-options.hair .brown {
+	background-color: #664F3C;
+}
+
+.character-editor .editor-row .basic-options.hair .lightbrown {
+	background-color: #B89778;
+}
+
+.character-editor .editor-row .basic-options.hair .blonde {
+	background-color: #E5C8A8;
+}
+
+.character-editor .editor-row .basic-options.hair .strawberryblonde {
+	background-color: #A56B46;
+}
+
+.character-editor .editor-row .basic-options.hair .red {
+	background-color: #8D4A43;
+}
+
+.character-editor .editor-row .basic-options.hair .gray {
+	background-color: #A0A0A0;
+}
+
+.character-editor .editor-row .basic-options.hair .white {
+	background-color: #F0F0F0;
+}
+
+/* Skin Colors */
+
+.character-editor .editor-row .basic-options.skin .darkbrown {
+	background-color: #785C50;
+}
+
+.character-editor .editor-row .basic-options.skin .sienna {
+	background-color: #A56638;
+}
+
+.character-editor .editor-row .basic-options.skin .mediumbrown {
+	background-color: #967264;
+}
+
+.character-editor .editor-row .basic-options.skin .olive {
+	background-color: #BE723C;
+}
+
+.character-editor .editor-row .basic-options.skin .tan {
+	background-color: #D2B48C;
+}
+
+.character-editor .editor-row .basic-options.skin .lightbrown {
+	background-color: #B48A78;
+}
+
+.character-editor .editor-row .basic-options.skin .peach {
+	background-color: #FFDABE;
+}
+
+.character-editor .editor-row .basic-options.skin .white {
+	background-color: #FFE5C8;
+}
+
+/* Eye Colors */
+
+.character-editor .editor-row .basic-options.eye .black {
+	background-color: black;
+}
+
+.character-editor .editor-row .basic-options.eye .darkbrown {
+	background-color: #855E42;
+}
+
+.character-editor .editor-row .basic-options.eye .hazel {
+	background-color: #8e7618;
+}
+
+.character-editor .editor-row .basic-options.eye .jadegreen {
+	background-color: #00a86b;
+}
+
+.character-editor .editor-row .basic-options.eye .emeraldgreen {
+	background-color: #009874;
+}
+
+.character-editor .editor-row .basic-options.eye .royalblue {
+	background-color: #27408B;
+}
+
+.character-editor .editor-row .basic-options.eye .babyblue {
+	background-color: #60AFFE;
+}
+
+.character-editor .editor-row .basic-options.eye .turquoise {
+	background-color: #42C0FB;
+}
+
+.field-label {
+	vertical-align: top;
+	line-height: 20px;
+	width: 100px;
+	padding-top: 3px;
+}
+
+.character-editor .field-label.customMessage {
+	width: 150px;
+}
+
+/**************************/
+/*     sprite maker       */
+/**************************/
+.sprite-maker {
+	display: inline-block;
+}
+
+.sprite-maker .description {
+	width: 30%;
+	min-width: 280px;
+}
+
+.sprite-maker .my-sprite {
+	vertical-align: top;
+	width: 260px;
+}
+
+.my-sprite {
+	position: absolute;
+}
+
+.sprite-maker > *,
+.my-sprite > * {
+	display: inline-block;
+}
+
+.sprite-maker .right-body .place-holder {
+	width: 260px;
+	height: 275px;
+}
+
+.sprite-maker .buttons-container {
+	display: block;
+}
+
+.my-sprite .canvas {
+	width: 260px;
+	height: 250px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.project-section .my-sprite .canvas {
+	background: #add8e6;
+	padding-top: 10px;
+}
+
+.my-sprite .canvas .row,
+.my-sprite .canvas .bit {
+	height: 15px;
+	line-height: 15px;
+}
+
+.my-sprite .canvas .bit {
+	display: inline-block;
+	width: 15px;
+}
+.my-sprite .canvas.size90 .row,
+.my-sprite .canvas.size90 .bit {
+	height: 13px;
+	line-height: 13px;
+}
+.my-sprite .canvas.size80 .row,
+.my-sprite .canvas.size80 .bit {
+	height: 12px;
+	line-height: 12px;
+}
+.my-sprite .canvas.size70 .row,
+.my-sprite .canvas.size70 .bit {
+	height: 10px;
+	line-height: 10px;
+}
+.my-sprite .canvas.size60 .row,
+.my-sprite .canvas.size60 .bit {
+	height: 9px;
+	line-height: 9px;
+}
+.my-sprite .canvas.size50 .row,
+.my-sprite .canvas.size50 .bit {
+	height: 8px;
+	line-height: 8px;
+}
+.my-sprite .canvas.size40 .row,
+.my-sprite .canvas.size40 .bit {
+	height: 6px;
+	line-height: 6px;
+}
+.my-sprite .canvas.size30 .row,
+.my-sprite .canvas.size30 .bit {
+	height: 5px;
+	line-height: 5px;
+}
+.my-sprite .canvas.size20 .row,
+.my-sprite .canvas.size20 .bit {
+	height: 4px;
+	line-height: 4px;
+}
+.my-sprite .canvas.size10 .row,
+.my-sprite .canvas.size10 .bit {
+	height: 2px;
+	line-height: 2px;
+}
+.my-sprite .canvas.size0 .row,
+.my-sprite .canvas.size0 .bit {
+	height: 1px;
+	line-height: 1px;
+}
+
+.my-sprite .canvas.size90 .bit {
+	width: 13px;
+}
+.my-sprite .canvas.size80 .bit {
+	width: 12px;
+}
+.my-sprite .canvas.size70 .bit {
+	width: 10px;
+}
+.my-sprite .canvas.size60 .bit {
+	width: 9px;
+}
+.my-sprite .canvas.size50 .bit {
+	width: 8px;
+}
+.my-sprite .canvas.size40 .bit {
+	width: 6px;
+}
+.my-sprite .canvas.size30 .bit {
+	width: 5px;
+}
+.my-sprite .canvas.size20 .bit {
+	width: 4px;
+}
+.my-sprite .canvas.size10 .bit {
+	width: 2px;
+}
+.my-sprite .canvas.size0 .bit {
+	width: 1px;
+}
+
+.project-section .my-sprite .canvas .bit {
+	background-color: white;
+}
+
+.project-section .my-sprite .canvas .bit.inverted {
+	background-color: black;
+}
+
+
+
+.my-sprite .canvas .bit:hover {
+	box-shadow: inset 0 0 8px #7647a2;
+	background-color: #42C0FB !important;
+}
+
+.right-body .sprite-editor {
+	display: none;
+}
+
+.project-section .sprite-editor {
+	display: inline-block;
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 30%;
+	min-width: 336px;
+	height: 190px;
+	text-align: center;
+}
+
+.sprite-editor input {
+	cursor: pointer;
+	width: 100px;
+}
+
+.sprite-editor input[type="checkbox"]{
+	vertical-align: middle;
+	margin-top: 2px;
+}
+
+.sprite-editor .color-label {
+	width: 112px;
+}
+
+.sprite-editor .slider {
+	background-color: #d1c7e8;
+	border: 1px solid #7647a2;
+	width: 200px;
+	height: 11px;
+	margin-top: 5px;
+}
+
+.sprite-editor .slider .ui-slider-handle {
+	background-color: #7647a2;
+	border-color: #7647a2;
+}
+
+.sprite-editor .slider .ui-slider-handle.ui-state-active {
+	background: #7647a2;
+}

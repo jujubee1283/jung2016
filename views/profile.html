@@ -1,0 +1,39 @@
+<div class="top-left">
+	<div class="objective">{{profile.objective}}</div>
+	<div class="getResume" ng-click="getResume()">Resume PDF</div>
+	<div class="education section">
+		<div class="sub-title">Education</div>
+		<div>{{profile.education.school}}</div>
+		<div>{{profile.education.location}}</div>
+		<div>{{profile.education.yearsAttended}}</div>
+		<div>{{profile.education.degree}}</div>
+	</div>
+</div>
+<div class="top-right pic"></div>
+
+<div class="skills section">
+	<div class="skills-header">
+		<div class="sub-title">Skills</div>
+		<div class="proficiency-legend" tooltip>
+			<div ng-repeat="level in profile.proficiencyLevels" class="pair" title="{{level.desc}}">
+				<div class="color {{level.value}}"></div>
+				<div class="value">{{level.value}}</div>
+			</div>
+		</div>
+		<div class="sort-container">
+			<label for="skillSort">Sort by</label>
+			<select select-menu selected-value-name="'proficiencyOrder'" name="skillSort" id="skillSort" class="skillSort">
+				<option value="default" selected="selected">Default</option>
+				<option value="proficiency">Proficiency</option>
+				<option value="alphabetical">Alphabetical</option>
+			</select>
+		</div>
+	</div>
+	<div ng-repeat="skillSet in profile.skills" class="skillSet">
+		<div class="sub-sub-title">{{skillSet.title}}</div>
+		<div ng-repeat="skill in skillSet.list | orderBy:profile.proficiencyMap[proficiencyOrder]" class="skill">
+			<div class="proficiency-level {{profile.proficiencyLevels[skill.proficiency].value}}"></div>
+			<div class="skill-value">{{skill.skill}}</div>
+		</div>
+	</div>
+</div>

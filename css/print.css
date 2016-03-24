@@ -1,0 +1,49 @@
+@media print {
+	.skills .skill {
+		min-width: 238px;
+		margin-left: 16px;
+		font-size: 14px;
+	}
+
+	.skills .skill .proficiency-level {
+		width: 14px;
+		height: 14px;
+	}
+
+	.main-content .top-right.pic {
+		content:url("../resources/images/profile-pic2.png");
+		height: inherit;
+	}
+
+	.tabs .tab.home .tabName {
+		content:url("../resources/images/my-name.png");
+		height: inherit;
+	}
+
+	.tabs .tab:before {
+		box-shadow: 5px 6px 0 5px white;
+	}
+
+	.tabs .tab:after {
+		box-shadow: -5px 6px 0 5px white;
+	}
+
+	.tabs .tab.active .shadowBlocker {
+		background-color: white !important;
+	}
+
+	.main-content .getResume {
+		display: none;
+	}
+
+	#extrasContainer .extra-item {
+		border: 1px solid #ccc;
+		border-radius: 6px;
+		margin: 14px 6px 0 6px;
+		width: 236px;
+	}
+
+	.extra-item .content .extra-row .thing {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,40 @@
+
+<div class="my-sprite">
+	<div class="canvas noselect">
+		<div ng-repeat="row in spriteMaker.bitMap" class="row">
+			<div ng-repeat="bit in row" ng-class="bit.key" ng-mousedown="startDrawing(bit.key, $event)" ng-mousemove="setHoveredBit(bit.key, $event)" ng-mouseup="stopDrawing()" class="bit" ng-style="{'background-color' : bit.color}"></div>
+		</div>
+	</div>
+</div>
+<div class="right-body">
+	<div class="place-holder"></div>
+	<div class="sprite-editor">
+		<div class="editor-row">
+			<div class="field-label color-label">Color</div>
+			<input type="color" class="color" ng-model="spriteMaker.currentColor"></input>
+		</div>
+		<div class="editor-row">
+			<div class="field-label" ng-click="spriteMaker.isEraserSelected = !spriteMaker.isEraserSelected">Eraser</div>
+			<input type="checkbox" name="eraser" ng-model="spriteMaker.isEraserSelected"><br>
+		</div>
+		<div class="editor-row">
+			<div class="field-label" ng-click="spriteMaker.bgInverted = !spriteMaker.bgInverted; invertBg()">Invert BG</div>
+			<input type="checkbox" name="invertBg" ng-model="spriteMaker.bgInverted" ng-change="invertBg()"><br>
+		</div>
+		<div class="editor-row">
+			<div class="field-label">Tile Size</div>
+			<div slider current-value="spriteMaker.sliderSize" options="spriteMaker.sliderOptions" var-name="'spriteMaker.sliderSize'" class="slider"></div>
+		</div>
+	</div>
+	<div class="description">Draw your own sprite. There are 16x16 = 256 tiles. Select the 'Eraser' checkbox to switch to erase mode. Select 'Invert BG' to change the canvas background to black if you are using light colors to draw. Use the slider to change the tile size. If you want a small sprite, you should still edit with large size tiles first. Any area erased or not painted on will be transparent.</div>
+</div>
+<div class="buttons-container">
+	<div class="msg-area"></div>
+	<div class="button clear-button" ng-click="openClearDialog()">Clear</div>
+	<div class="button export-button" ng-click="doExport()">Get PNG</div>
+</div>
+<div dialog id="clear-dialog" title="Clear the canvas?" options="clearDialogOptions">
+	<span class="ui-icon ui-icon-alert" style="float:left"></span>
+	<span>This action cannot be undone.</span>
+	<span>Are you sure?</span>
+</div>

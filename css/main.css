@@ -1,0 +1,158 @@
+.top-container {
+	position: absolute;
+	top: 20px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	min-width: 720px;
+	max-width: 1070px;
+}
+
+.main-content {
+	border: 1px solid #ddd;
+	border-bottom: none;
+	padding: 12px 32px;
+	font-size: 16px;
+	z-index: 2;
+	background: #f9f9ea;
+	position: relative;
+	border-width: 1px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	min-height: 100%;
+	margin: auto -10px;
+	box-shadow: 0px 0px 10px 2px #ddd;
+	margin-top: -1px;
+}
+
+.main-content .top-left,
+.main-content .top-right {
+	display: inline-block;
+}
+
+.main-content .section {
+	margin-top: 45px;
+}
+
+.main-content .sub-title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.main-content .top-left {
+	width: 63%;
+}
+
+.main-content .top-left .objective {
+	margin-top: 16px;
+}
+
+.main-content .top-left .getResume {
+	background-color: #d1c7e8;
+	margin: 16px auto 0;
+	width: 146px;
+	cursor: pointer;
+	border-radius: 6px;
+	border: 3px solid #aaa;
+	text-align: center;
+	padding: 2px 0;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+.main-content .top-right.pic {
+	background-image: url("../resources/images/profile-pic2.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	height: 340px;
+	width: 34%;
+	margin-top: 10px;
+	margin-bottom: -60px;
+	vertical-align: top;
+}
+
+.skills .skills-header {
+	padding-bottom: 4px;
+}
+
+.skills .skills-header * {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.skills .proficiency-legend {
+	line-height: 18px;
+	vertical-align: top;
+	margin-top: 6px;
+	margin-left: 36px;
+	font-size: 12px;
+	text-transform: capitalize;
+	font-style: italic;
+	color: #333;
+	border-radius: 4px;
+}
+
+.skills .proficiency-legend .pair {
+	margin-left: 8px;
+	margin-right: 8px;
+	vertical-align: middle;
+	cursor: default;
+}
+
+.skills .proficiency-legend .color {
+	width: 13px;
+	height: 13px;
+	margin-top: -2px;
+	vertical-align: middle;
+}
+
+.skills .novice {
+	background-color: #ccd9fe !important;
+}
+.skills .intermediate {
+	background-color: #5070fb !important;
+}
+.skills .advanced {
+	background-color: #001d9a !important;
+}
+
+.skills .skillSet {
+	margin-bottom: 20px;
+}
+
+.skills .sub-sub-title {
+	font-weight: bold;
+	background-color: #d1c7e8;
+	border-radius: 30px;
+	text-align: center;
+	margin-bottom: 8px;
+	padding-top: 2px;
+	line-height: 20px;
+}
+
+.skills .skill * {
+	display: inline-block;
+}
+
+.skills .skill {
+	display: inline-block;
+	width: 22%;
+	min-width: 228px;
+	margin-left: 20px;
+}
+
+.skills .skill .proficiency-level {
+	width: 16px;
+	height: 16px;
+	border-radius: 10px;
+	margin-top: 2px;
+}
+
+.skills .skill-value {
+	vertical-align: top;
+}

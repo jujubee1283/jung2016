@@ -1,0 +1,11 @@
+<div id="extrasContainer">
+	<div class="extras-description">These are some lists of things, ordered either by favorites or by occurrence.</div>
+	<div ng-repeat="item in extrasList" class="extra-item">
+		<div class="title">{{item.title}}</div>
+		<div class="content">
+			<div class="extra-row" ng-repeat="thing in item.content">
+				<div class="bullet">{{$index+1}}</div><div class="thing">{{thing}}</div>
+			</div>
+		</div>
+	</div>
+</div>

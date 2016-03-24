@@ -1,0 +1,199 @@
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: crosshair;
+}
+
+*:focus {
+  outline: none;
+}
+
+/***********/
+/* tooltip */
+/***********/
+
+  .ui-tooltip, .arrow:after {
+    background: #8e82ad;
+    border: 2px solid white;
+  }
+  .ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 16px;
+    font-size: 12px;
+    max-width: 240px;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 6px 3px -7px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+  }
+
+
+/**************/
+/* selectmenu */
+/**************/
+
+.sort-container {
+  margin-left: 26px;
+  vertical-align: top;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+fieldset {
+  border: 0;
+  margin-left: 300px;
+}
+label {
+  vertical-align: top;
+  margin-top: 4px;
+}
+select {
+  width: 115px;
+}
+
+.ui-selectmenu-button {
+  height: 20px;
+  margin-left: -5px;
+}
+
+label[for=skillSort-button] {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.ui-selectmenu-button {
+  vertical-align: top;
+}
+
+.ui-selectmenu-button,
+.ui-selectmenu-menu * {
+  font-size: 12px;
+}
+
+.ui-selectmenu-button.ui-corner-top {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.ui-selectmenu-open .ui-corner-bottom,
+.ui-menu.ui-corner-bottom li:last-child {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.ui-selectmenu-button.ui-corner-all {
+  border-radius: 8px;
+}
+
+.ui-selectmenu-button span.ui-selectmenu-text {
+  font-size: 12px;
+  padding: 0 6px;
+  vertical-align: top;
+  line-height: 20px;
+}
+
+.ui-selectmenu-menu .ui-menu,
+.ui-menu .ui-menu-item {
+  border-color: #ddd;
+  line-height: 14px;
+}
+
+.ui-menu .ui-menu-item.ui-state-focus {
+  background-image: none;
+  background-color: #ddd;
+}
+
+/**************/
+/*   dialog   */
+/**************/
+.ui-dialog {
+  font-family: Courier;
+  background: #e5e8f9;
+  margin-top: -100px;
+}
+
+.ui-dialog .ui-widget-header {
+  margin-top: 0;
+  border: 1px solid #777;
+  background: #d1c7e8;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+  font-size: 20px;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-button {
+  border: 1px solid #777;
+}
+
+.ui-dialog .ui-dialog-content {
+  padding: 24px 15px 0 22px;
+  font-size: 14px;
+}
+
+.ui-dialog .getImage {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.ui-dialog .ui-dialog-content .ui-icon-alert {
+  margin: 3px 10px 20px 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+  margin-top: 0;
+  padding: 2px 0 0;
+  background: #e5e8f9;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-button-text {
+  padding: 4px 10px;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-button {
+  float:left;
+  margin: 4px 10px 4px 0;
+  outline: none;
+  border: 1px solid #777;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-button:first-child .ui-button-text {
+  font-weight: bold;
+}
+
+body .ui-widget-overlay.ui-front {
+  opacity: 0.4;
+}

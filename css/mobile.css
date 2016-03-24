@@ -1,0 +1,254 @@
+/* mobile screen support */
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 1180px) {
+
+  /* projects */
+  .project-section .description {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+
+@media only screen
+and (max-width : 768px) {
+  .top-container {
+    min-width: 600px;
+  }
+
+  .tabs .tab.home {
+    margin-bottom: -16px;
+    width: 142px;
+    padding: 4px;
+  }
+
+  .tabs .tab.home .tabName {
+    background-size: 126px;
+    width: 126px;
+    height: 64px;
+    margin-top: 5px;
+  }
+
+  .tabs .tab.home .shadowBlocker {
+    margin-top: 3px;
+    margin-left: -5px;
+  }
+
+  .tabs {
+    font-size: 14px;
+  }
+
+  .skills .skill .proficiency-level {
+    margin-top: 1px;
+  }
+
+  .skills .proficiency-legend {
+    margin-left: 12px;
+  }
+
+  .skills .skill {
+    width: 44%;
+    min-width: 238px;
+  }
+
+  .sort-container {
+    margin-left: 10px;
+  }
+
+  /************/
+  /* projects */
+  /************/
+
+  .project-section .description {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 93%;
+    font-size: 14px;
+  }
+}
+
+@media only screen 
+and (max-width : 640px) {
+  .top-container {
+    font-size: 12px;
+    top: 20px;
+    width: 80%;
+    min-width: 270px;
+    max-width: 480px;
+  }
+
+  .main-content {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .tabs .tab {
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    width: 56px;
+  }
+
+  .main-content .top-right.pic {
+    width: 32%;
+    margin-top: -42px;
+  }
+
+  .tabs .tab.home {
+    width: 125px;
+  }
+
+  .tabs .tab.home .tabName {
+    background-size: 106px;
+    width: 106px;
+    height: 44px;
+  }
+
+  .tabs .tab.home .shadowBlocker {
+    margin-top: -1px;
+    margin-left: -5px;
+  }
+
+  .skills .skill .proficiency-level {
+    margin-top: 0;
+  }
+
+  .proficiency-legend .pair {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .skills .skill {
+    min-width: 208px;
+  }
+
+  .proficiency-legend {
+    margin-left: 10px;
+    font-size: 11px;
+  }
+
+  .sort-container {
+    margin-left: 108px;
+  }
+
+  /************/
+  /* Projects */
+  /************/
+  .right-body .character-editor {
+    width: 100%;
+  }
+
+  .project-section .description {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 93%;
+    min-width: 200px;
+    font-size: 13px;
+  }
+
+  .project-section .sprite-editor {
+    padding: 0;
+  }
+
+  .project-section .sprite-editor .slider {
+    width: 160px;
+  }
+}
+
+@media only screen 
+and (max-width : 480px) {
+  .top-container {
+    font-size: 12px;
+    top: 20px;
+    width: 80%;
+    min-width: 270px;
+    max-width: 480px;
+  }
+
+  .tabs .tab.active,
+  .main-content {
+    box-shadow: 0px 0px 6px 2px #ddd;
+  }
+
+  .main-content .top-left {
+    width: 100%;
+  }
+
+  .main-content .top-right.pic {
+    width: 254px;
+    margin-top: -20px;
+  }
+
+  .tabs {
+    margin-left: 14px;
+    font-size: 12px;
+  }
+
+  .tabs .tab,
+  .tabs .tab.home {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .tabs .tab {
+    width: 56px;
+    padding: 8px 4px;
+  }
+
+  .tabs .tab.home {
+    margin-bottom: -12px;
+    margin-left: 14px;
+    width: 76px;
+    padding: 4px;
+  }
+
+  .tabs .tab.home .tabName {
+    background-size: 68px;
+    width: 70px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 4px;
+  }
+
+  .tabs .tab .shadowBlocker {
+    margin-top: 2px;
+    margin-left: -4px;
+  }
+
+  .skills .proficiency-legend {
+    margin-top: -14px;
+    margin-bottom: 6px;
+  }
+
+  .skills .proficiency-legend .pair {
+    display: block;
+  }
+
+  /* Projects */
+  .project-section {
+    padding: 4px;
+    margin-top: 40px;
+  }
+
+  .right-body .character-editor {
+    width: 190px;
+    height: 330px;
+  }
+
+  .project-section .sprite-editor {
+    width: 230px;
+    min-width: 230px;
+    height: 140px;
+  }
+
+  .project-section .sprite-editor .field-label {
+    width: 80px;
+  }
+
+  .project-section .sprite-editor .slider {
+    width: 105px;
+  }
+
+  .sprite-maker .right-body .place-holder {
+    width: 238px;
+  }
+}

@@ -1,0 +1,86 @@
+<div class="my-character">
+	<div class="hair-area">
+		<div class="hair"></div>
+		<div class="bangs">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+	</div>
+	<div class="ears">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+
+	<div class="face"></div>
+	<div class="eye-area left-eye-area">
+		<div class="eyebrow left-eyebrow"></div>
+		<div class="eyeball left-eyeball"></div>
+		<div class="eyelid left-eyelid"></div>
+		<div class="eye left-eye"></div>
+	</div>
+	<div class="eye-area right-eye-area">
+		<div class="eyebrow right-eyebrow"></div>
+		<div class="eyeball right-eyeball"></div>
+		<div class="eyelid right-eyelid"></div>
+		<div class="eye right-eye"></div>
+	</div>
+	<div class="mouth"></div>
+	<div class="custom-message">{{customMessage}}</div>
+</div>
+<div class="right-body"
+	><div class="place-holder"></div>
+	<div class="character-editor">
+		<div class="editor-row">
+			<div class="field-label">Hair Color</div
+			><div class="basic-options hair" ng-click="doUpdate($event, 'hairColor')">
+				<div class="black selected"></div
+				><div class="brown"></div
+				><div class="lightbrown"></div
+				><div class="blonde"></div
+				><div class="strawberryblonde"></div
+				><div class="red"></div
+				><div class="gray"></div
+				><div class="white"></div>
+			</div
+			><input type="color" class="hairColor" ng-model="hairColor" ng-change="doUpdate(null, 'hairColor')"></input>
+		</div
+		><div class="editor-row">
+			<div class="field-label">Skin Color</div
+			><div class="basic-options skin" ng-click="doUpdate($event, 'skinColor')">
+				<div class="darkbrown"></div
+				><div class="mediumbrown"></div
+				><div class="sienna"></div
+				><div class="olive"></div
+				><div class="lightbrown"></div
+				><div class="tan selected"></div
+				><div class="peach"></div
+				><div class="white"></div>
+			</div
+			><input type="color" class="skinColor" ng-model="skinColor" ng-change="doUpdate(null, 'skinColor')"></input>
+		</div
+		><div class="editor-row">
+			<div class="field-label">Eye Color</div
+			><div class="basic-options eye" ng-click="doUpdate($event, 'eyeColor')">
+				<div class="black selected"></div
+				><div class="darkbrown"></div
+				><div class="hazel"></div
+				><div class="jadegreen"></div
+				><div class="emeraldgreen"></div
+				><div class="royalblue"></div
+				><div class="babyblue"></div
+				><div class="turquoise"></div>
+			</div
+			><input type="color" class="eyeColor" ng-model="eyeColor" ng-change="doUpdate(null, 'eyeColor')"></input>
+		</div
+		><div class="editor-row">
+			<div class="field-label customMessage">Custom Message</div>
+			<input class="message" ng-model="customMessage" maxlength="24" alpha-numeric-only></input>
+		</div>
+	</div
+	><div class="description">You can edit this image by selecting from a basic list of colors or use the color picker on the right. You can also enter a message. Click 'Update' to reflect your changes onto the image. Click 'Get PNG' to download a PNG of the image.</div>
+</div>
+
+<div class="buttons-container">
+	<div class="msg-area"></div>
+	<div class="button export-button" ng-click="doExport()">Get PNG</div>
+</div>

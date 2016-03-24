@@ -1,0 +1,19 @@
+<div ng-switch on="renderPath[ 0 ]">
+	<div ng-switch-when="normal" class="top-container">
+		<div class="tab {{tab}}" ng-repeat="tab in main.tabs" ng-class="{'active': $index == main.currentTab}" ng-click="clickTab(tab)">
+			<div class="tabName">{{tab == 'home' ? '' : tab}}</div>
+			<div class="shadowBlocker"></div>
+		</div>
+		<div class="main-content">
+			<ng-view></ng-view>
+		</div>
+	</div>
+	<!-- project: myCharacter -->
+	<div ng-switch-when="myCharacter">
+		<div my-character></div>
+	</div>
+	<!-- project: spriteMaker -->
+	<div ng-switch-when="spriteMaker">
+		<div sprite-maker ng-controller="spriteMakerCtrl"></div>
+	</div>
+</div>
